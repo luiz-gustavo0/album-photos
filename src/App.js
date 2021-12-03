@@ -1,13 +1,7 @@
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
-
-import api from './services/api';
+import { usePhotos } from './hooks/usePhotos';
 
 function App() {
-  const { data, isLoading, error } = useQuery('photos', async () => {
-    const { data } = await api.get('/curated');
-
-    return data;
-  });
+  const { data, isLoading, error } = usePhotos();
 
   if (isLoading) return 'Loading...';
 
@@ -16,7 +10,7 @@ function App() {
   console.log(data);
   return (
     <div className='App'>
-      <h1>Album de fotos</h1>
+      <h1>Página: {data.page}</h1>
     </div>
   );
 }
