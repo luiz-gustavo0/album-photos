@@ -33,7 +33,7 @@ export const Pagination = ({
       : [];
 
   return (
-    <div>
+    <div className='pagination'>
       {currentPage > 1 + siblingsCount && (
         <>
           <PaginationItem onPageChange={onPageChange} pageNumber={1} />

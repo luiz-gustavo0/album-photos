@@ -1,11 +1,14 @@
 import React from 'react';
 
-import './styles.css';
+import './styles.scss';
 
 export const PaginationItem = ({ pageNumber, onPageChange }) => {
   return (
-    <div className='container' onClick={() => onPageChange(pageNumber)}>
-      <span>{pageNumber}</span>
-    </div>
+    <button
+      className='pagination__item'
+      onClick={() => onPageChange(pageNumber)}
+    >
+      {pageNumber}
+    </button>
   );
 };
