@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { Header } from './components/Header';
 import { Pagination } from './components/Pagination';
 import { usePhotos } from './hooks/usePhotos';
+
+import './styles/global.scss';
 
 function App() {
   const [page, setPage] = useState(1);
@@ -12,6 +15,7 @@ function App() {
 
   return (
     <div className='App'>
+      <Header />
       <h1>Página: {data.page}</h1>
       <br />
       <Pagination
