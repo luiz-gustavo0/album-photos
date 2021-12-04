@@ -1,0 +1,27 @@
+.photo-container {
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+
+  column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -moz-column-count: 3;
+  column-width: 33%;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+
+  column-gap: 2rem;
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+}
+
+.photo {
+  margin-bottom: 2rem;
+
+  &__img {
+    object-fit: cover;
+    border: 8px solid #070403;
+  }
+}
