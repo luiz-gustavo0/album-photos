@@ -4,7 +4,6 @@ import { PhotoItem } from './PhotoItem';
 import './styles.scss';
 
 export const PhotoList = ({ data }) => {
-  console.log(data);
   return (
     <div className='photo-container'>
       {data.photos.map((photo) => (
