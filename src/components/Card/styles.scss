@@ -1,0 +1,54 @@
+.card {
+  border: 1px solid red;
+  width: 30rem;
+  height: 30rem;
+  border: 8px solid #070403;
+  transition: all 0.2s ease;
+
+  &:nth-child(odd) {
+    transform: rotate(-15deg);
+    background: red;
+  }
+
+  &:nth-child(even) {
+    transform: rotate(15deg);
+    background: blue;
+  }
+
+  &:nth-child(odd),
+  &:nth-child(even) {
+    &:hover {
+      transform: scale(1.1);
+      z-index: 1;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__label {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 1rem;
+    transition: all 0.2s ease;
+
+    span {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &:hover &__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    text-align: center;
+  }
+}
