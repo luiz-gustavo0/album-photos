@@ -30,12 +30,12 @@ export const Footer = () => {
           </a>
         </div>
       </div>
-      <p className='footer__atribuition'>
+      {/* <p className='footer__atribuition'>
         Fotos fornecidas por{' '}
         <a href='https://pexels.com' target='_blank' rel='noreferrer'>
           pexels.com
         </a>
-      </p>
+      </p> */}
     </footer>
   );
 };

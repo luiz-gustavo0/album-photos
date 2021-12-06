@@ -2,10 +2,11 @@
   width: 100%;
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 2rem 1rem;
+  padding: 0 2rem;
 
   &__container {
-    padding: 4rem 0 1rem;
+    padding-top: 2rem;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,8 +32,8 @@
   align-items: center;
 
   &__item {
-    width: 4rem;
-    height: 4rem;
+    width: 3.2rem;
+    height: 3.2rem;
 
     display: flex;
     align-items: center;
@@ -40,7 +41,7 @@
     transition: all 0.2s ease;
 
     &:hover {
-      border: 3px solid #070403;
+      border: 1px solid #070403;
     }
 
     img {

@@ -1,24 +1,28 @@
 .home {
+  min-height: calc(100vh - 12rem);
+
   &__container {
     max-width: 130rem;
+    height: 100%;
     margin: 0 auto;
     height: 100%;
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
 
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 
     h1 {
+      font-size: 6rem;
       margin-bottom: 4rem;
     }
   }
 
   &__card-list {
+    flex: 1;
     width: 100%;
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    justify-content: space-between;
   }
 }

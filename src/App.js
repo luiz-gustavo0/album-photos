@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes />
-        {/* <Footer /> */}
+        <Footer />
         <PhotoModal />
       </BrowserRouter>
     </ModalPhotoProvider>

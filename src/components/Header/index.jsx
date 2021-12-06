@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
@@ -6,11 +7,17 @@ export const Header = () => {
   return (
     <header className='header'>
       <div className='header__container'>
-        <div className='header__box'>
-          <h1 className='header__box-heading' style={{ fontWeight: 400 }}>
-            Memories
-          </h1>
-        </div>
+        <span className='header__logo'>Memories</span>
+        <nav>
+          <ul className='menu'>
+            <li className='menu__item'>
+              <Link to='/'>Home</Link>
+            </li>
+            <li className='menu__item'>
+              <Link to='/'>About</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
