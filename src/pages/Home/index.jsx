@@ -13,7 +13,12 @@ export const Home = () => {
 
         <div className='home__card-list'>
           {data.map((item, index) => (
-            <Card key={index} imgSrc={item.image} label={item.label} />
+            <Card
+              key={index}
+              imgSrc={item.image}
+              label={item.label}
+              album={item.album}
+            />
           ))}
         </div>
       </div>

@@ -1,19 +1,22 @@
-import { Content } from './components/Content';
+import { BrowserRouter } from 'react-router-dom';
+import { Routes } from './routes';
+
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { PhotoModal } from './components/PhotoModal';
 import { ModalPhotoProvider } from './hooks/useModalPhoto';
-import { Home } from './pages/Home';
 
 import './styles/global.scss';
 
 function App() {
   return (
     <ModalPhotoProvider>
-      <Header />
-      <Home />
-      {/* <Footer /> */}
-      <PhotoModal />
+      <BrowserRouter>
+        <Header />
+        <Routes />
+        {/* <Footer /> */}
+        <PhotoModal />
+      </BrowserRouter>
     </ModalPhotoProvider>
   );
 }

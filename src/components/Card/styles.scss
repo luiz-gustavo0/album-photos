@@ -4,6 +4,7 @@
   height: 30rem;
   border: 8px solid #070403;
   transition: all 0.2s ease;
+  cursor: pointer;
 
   &:nth-child(odd) {
     transform: rotate(-15deg);
