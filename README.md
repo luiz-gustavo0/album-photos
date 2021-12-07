@@ -29,7 +29,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Clone o projeto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/luiz-gustavo0/album-photos.git
 ```
 
 Vá até a pasta do projeto
