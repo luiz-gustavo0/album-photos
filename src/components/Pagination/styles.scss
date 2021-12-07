@@ -27,4 +27,11 @@
       cursor: initial;
     }
   }
+
+  @media (max-width: 600px) {
+    &__item {
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem;
+    }
+  }
 }

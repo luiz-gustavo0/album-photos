@@ -10,11 +10,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid #070403;
+    border-top: 1px solid var(--black-color);
   }
 
   &__atribuition {
     font-size: 1.2rem;
+    text-align: center;
 
     a {
       color: inherit;
@@ -23,6 +24,18 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__container {
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    &__copy {
+      font-size: 1.4rem;
     }
   }
 }
@@ -41,7 +54,7 @@
     transition: all 0.2s ease;
 
     &:hover {
-      border: 1px solid #070403;
+      border: 1px solid var(--black-color);
     }
 
     img {

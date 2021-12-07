@@ -1,19 +1,18 @@
 .card {
-  border: 1px solid red;
   width: 30rem;
   height: 30rem;
-  border: 8px solid #070403;
+  border: 8px solid var(--black-color);
   transition: all 0.2s ease;
   cursor: pointer;
 
   &:nth-child(odd) {
     transform: rotate(-15deg);
-    background: red;
+    background: var(--secondary-color);
   }
 
   &:nth-child(even) {
     transform: rotate(15deg);
-    background: blue;
+    background: var(--secondary-color);
   }
 
   &:nth-child(odd),
@@ -51,5 +50,27 @@
     justify-content: center;
     top: 0;
     text-align: center;
+  }
+
+  @media (max-width: 960px) {
+    &:nth-child(odd),
+    &:nth-child(even) {
+      transform: rotate(0);
+    }
+
+    &__label {
+      display: block;
+
+      span {
+        font-size: 1.6rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    span {
+      font-size: 1.4rem;
+    }
   }
 }
