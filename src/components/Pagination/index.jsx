@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PaginationItem } from './PaginationItem';
 
 const siblingsCount = 1;
@@ -36,7 +36,11 @@ export const Pagination = ({
     <div className='pagination'>
       {currentPage > 1 + siblingsCount && (
         <>
-          <PaginationItem onPageChange={onPageChange} pageNumber={1} />
+          <PaginationItem
+            onPageChange={onPageChange}
+            pageNumber={1}
+            isPageActive={currentPage}
+          />
           {currentPage > 2 + siblingsCount && <span>...</span>}
         </>
       )}
@@ -47,10 +51,15 @@ export const Pagination = ({
             onPageChange={onPageChange}
             key={page}
             pageNumber={page}
+            isPageActive={currentPage}
           />
         ))}
 
-      <PaginationItem onPageChange={onPageChange} pageNumber={currentPage} />
+      <PaginationItem
+        onPageChange={onPageChange}
+        pageNumber={currentPage}
+        isPageActive={currentPage}
+      />
 
       {nextPages.length > 0 &&
         nextPages.map((page) => (
@@ -58,13 +67,18 @@ export const Pagination = ({
             onPageChange={onPageChange}
             key={page}
             pageNumber={page}
+            isPageActive={currentPage}
           />
         ))}
 
       {currentPage + siblingsCount < lastPage && (
         <>
           {currentPage + 1 + siblingsCount < lastPage && <span>...</span>}
-          <PaginationItem onPageChange={onPageChange} pageNumber={lastPage} />
+          <PaginationItem
+            onPageChange={onPageChange}
+            pageNumber={lastPage}
+            isPageActive={currentPage}
+          />
         </>
       )}
     </div>

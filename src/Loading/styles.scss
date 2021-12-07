@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  height: calc(100vh - 12rem);
+  overflow: hidden;
+  background: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spiner div {
+  animation: loading 1s linear infinite;
+  width: 160px;
+  height: 160px;
+
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 #070403;
+}

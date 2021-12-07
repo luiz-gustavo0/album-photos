@@ -17,9 +17,14 @@
     transition: all 0.2s ease;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:disabled {
       background: #070403;
       color: #bc8b62;
+    }
+
+    &:disabled {
+      cursor: initial;
     }
   }
 }
