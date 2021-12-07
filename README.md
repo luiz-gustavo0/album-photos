@@ -15,7 +15,7 @@ Criar um site para um álbum de fotos utilizando a [Pexels API](https://www.pexe
 
 ## Preview
 
-[Album de Fotos]()
+[Album de Fotos](https://album-photos-app.netlify.app/)
 
 ## Pré-requisitos
 
@@ -35,7 +35,7 @@ Clone o projeto
 Vá até a pasta do projeto
 
 ```bash
-  cd my-project
+  cd album-photos
 ```
 
 Instale as dependências
