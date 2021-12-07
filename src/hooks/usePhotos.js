@@ -1,8 +1,8 @@
 import { useQuery } from 'react-query';
 import api from '../services/api';
 
-export async function getPhotos(page) {
-  const { data } = await api.get('/curated', {
+export async function getPhotos(query, page) {
+  const { data } = await api.get(`/search?query=${query}`, {
     params: {
       page,
     },
@@ -11,8 +11,8 @@ export async function getPhotos(page) {
   return data;
 }
 
-export function usePhotos(page) {
-  return useQuery(['photos', page], () => getPhotos(page), {
+export function usePhotos(query, page) {
+  return useQuery([query, page], () => getPhotos(query, page), {
     staleTime: 1000 * 60 * 10, // ten minutes
   });
 }
