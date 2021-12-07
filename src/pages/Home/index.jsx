@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from '../../components/Card';
 
-import { data } from '../../constants/data';
+import { albums } from '../../constants/albums';
 
 import './styles.scss';
 
@@ -12,7 +12,7 @@ export const Home = () => {
         <h1>Álbuns</h1>
 
         <div className='home__card-list'>
-          {data.map((item, index) => (
+          {albums.map((item, index) => (
             <Card
               key={index}
               imgSrc={item.image}
