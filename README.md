@@ -1,4 +1,4 @@
-# Album de Fotos
+# Album de Fotos  
 
 Aplicação desenvolvida para o teste de Front-end da Leadster.
 
@@ -15,7 +15,9 @@ Criar um site para um álbum de fotos utilizando a [Pexels API](https://www.pexe
 
 ## Preview
 
-[Album de Fotos]()
+[Album de Fotos](https://album-photos-app.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f755e04e-b824-4887-99cd-ca62655af277/deploy-status)](https://app.netlify.com/sites/jovial-varahamihira-6dbcb5/deploys)
 
 ## Pré-requisitos
 
@@ -29,13 +31,13 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Clone o projeto
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/luiz-gustavo0/album-photos.git
 ```
 
 Vá até a pasta do projeto
 
 ```bash
-  cd my-project
+  cd album-photos
 ```
 
 Instale as dependências
