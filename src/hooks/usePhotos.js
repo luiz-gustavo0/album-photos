@@ -5,6 +5,7 @@ export async function getPhotos(query, page) {
   const { data } = await api.get(`/search?query=${query}`, {
     params: {
       page,
+      per_page: 16,
     },
   });
 

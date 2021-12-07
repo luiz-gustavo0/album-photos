@@ -9,7 +9,7 @@ export const Home = () => {
   return (
     <main className='home'>
       <div className='home__container'>
-        <h1>Albums</h1>
+        <h1>Álbuns</h1>
 
         <div className='home__card-list'>
           {data.map((item, index) => (

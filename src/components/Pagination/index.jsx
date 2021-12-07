@@ -13,7 +13,7 @@ function generatePagesArray(from, to) {
 
 export const Pagination = ({
   totalRegisters,
-  registersPerPage = 15,
+  registersPerPage = 16,
   currentPage = 1,
   onPageChange,
 }) => {

@@ -4,38 +4,22 @@
   margin: 0 auto;
   padding: 6rem 2rem;
 
-  column-count: 3;
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-width: 33%;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2rem;
 
-  column-gap: 2rem;
-  -webkit-column-gap: 2rem;
-  -moz-column-gap: 2rem;
-
-  @media (max-width: 960px) {
-    column-count: 2;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-  }
-
-  @media (max-width: 700px) {
-    column-count: 1;
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-
-    column-width: 100%;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
   }
 }
 
 .photo {
+  height: 30rem;
   margin-bottom: 2rem;
+  background: var(--secondary-color);
 
   &__img {
+    height: 100%;
     object-fit: cover;
     border: 8px solid var(--black-color);
     cursor: pointer;

@@ -2,26 +2,26 @@ export const data = [
   {
     label: 'Natureza',
     image:
-      'https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?cs=srgb&dl=pexels-jacob-colvin-1761279.jpg&fm=jpg',
+      'https://res.cloudinary.com/luiz-gustavo0/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1638900660/images-internet/nature_ivsbtd.jpg',
     album: 'nature',
   },
   {
     label: 'Cidades',
     image:
-      'https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?cs=srgb&dl=pexels-josh-hild-2422461.jpg&fm=jpg',
+      'https://res.cloudinary.com/luiz-gustavo0/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1638900660/images-internet/city_ftbvfx.jpg',
     album: 'city',
   },
   {
     label: 'Viagens',
     image:
-      'https://images.pexels.com/photos/4009464/pexels-photo-4009464.jpeg?cs=srgb&dl=pexels-ekrulila-4009464.jpg&fm=jpg',
+      'https://res.cloudinary.com/luiz-gustavo0/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1638900659/images-internet/travel_ps749j.jpg',
 
     album: 'travel',
   },
   {
     label: 'Carros',
     image:
-      'https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?cs=srgb&dl=pexels-alexgtacar-1592384.jpg&fm=jpg',
+      'https://res.cloudinary.com/luiz-gustavo0/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1638900659/images-internet/car_kozccn.jpg',
     album: 'cars',
   },
 ];
