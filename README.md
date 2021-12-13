@@ -26,7 +26,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 É necessário gerar uma chave para realizar as requisições para a API, ler
 [documentação](https://www.pexels.com/api/documentation/#authorization).
 
-## Como rodal a aplicação localmente
+## Como rodar a aplicação localmente
 
 Clone o projeto
 
