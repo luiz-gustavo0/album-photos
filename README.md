@@ -1,11 +1,5 @@
 # Álbum de Fotos  
 
-Aplicação desenvolvida para o teste de Front-end da Leadster.
-
-## Objetivo
-
-Criar um site para um álbum de fotos utilizando a [Pexels API](https://www.pexels.com/api/documentation/#photos).
-
 ## Tecnologias utilizadas
 
 - [React](https://reactjs.org/)
